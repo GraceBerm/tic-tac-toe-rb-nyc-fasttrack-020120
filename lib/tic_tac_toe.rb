@@ -111,7 +111,7 @@ def winner(board)
 end
 
 def play(board)
-
+input = gets
   spaces_available = board.size
   spaces_to_start = 0
 
@@ -123,6 +123,7 @@ def play(board)
       break
 end
 end
+
  if won?(board)
    puts "Congratulations #{winner}!"
  elsif draw?(board)
