@@ -123,4 +123,9 @@ def play(board)
       break
 end
 end
+ if won?(board)
+   puts "Congratulations #{winner}!"
+ elsif draw?(board)
+   puts "It has been a draw."
+ end
 end
