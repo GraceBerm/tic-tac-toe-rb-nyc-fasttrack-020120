@@ -111,22 +111,5 @@ def winner(board)
 end
 
 def play(board)
-input = gets
-  spaces_available = board.size
-  spaces_to_start = 0
-
-  loop do
-    if spaces_to_start < spaces_available
-      turn(board)
-      spaces_to_start += 1
-    else
-      break
-end
-end
-
- if won?(board)
-   puts "Congratulations #{winner}!"
- elsif draw?(board)
-   puts "Cat's Game"
- end
+  turn(board)
 end
