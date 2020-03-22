@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  gets = input.to_i - 1
+  input = gets.strip.to_i
 end
 
 def move(board, index, value = "X")
@@ -126,6 +126,6 @@ end
  if won?(board)
    puts "Congratulations #{winner}!"
  elsif draw?(board)
-   puts "It has been a draw."
+   puts "Cat's Game"
  end
 end
